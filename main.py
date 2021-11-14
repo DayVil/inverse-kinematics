@@ -23,7 +23,8 @@ def main():
     screen = pg.display.set_mode(window_size)
 
     # Segment
-    segments = SegmentBuilder(10, 50, center)
+    # TODO: Make it possible to anchor
+    segments = SegmentBuilder(2, 50, center, False)
 
     while True:
         screen.fill((0, 0, 0))
